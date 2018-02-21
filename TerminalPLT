@@ -1,0 +1,25 @@
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ grep -Po "\*[^*]+\*" todo > todo1 
+grep: todo: No existe el archivo o el directorio
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ grep -Po "\*[^*]+\*" todo.txt > todo1 
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ less todo1
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ wc- l todo.txt
+No se ha encontrado la orden «wc-», quizás quiso decir:
+ La orden «wcw» del paquete «winswitch» (universe)
+ La orden «wc» del paquete «coreutils» (main)
+wc-: no se encontró la orden
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ wc- l todo1
+No se ha encontrado la orden «wc-», quizás quiso decir:
+ La orden «wcw» del paquete «winswitch» (universe)
+ La orden «wc» del paquete «coreutils» (main)
+wc-: no se encontró la orden
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ wc -l todo1
+349 todo1
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ less todo1
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ grep -Po "\*[^*]*\*" todo.txt > todo2 
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ wc -l todo2
+651 todo2
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ less todo2
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ grep -Po "\*+[^*]*\*+" todo.txt > todo3 
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ wc -l todo3
+598 todo3
+mjassor@ELC13XS000A047W ~/Documentos/PLT $ sort todo3
